@@ -1,0 +1,9 @@
+Command:
+$ git branch -a -vv
+
+Terminal output:
+  bug-fix-typo                b9048b6 Fix simple interest formula typo
+* main                        b9048b6 [origin/main: ahead 1] Fix simple interest formula typo
+  remotes/origin/HEAD         -> origin/main
+  remotes/origin/bug-fix-typo b9048b6 Fix simple interest formula typo
+  remotes/origin/main         ad95b0a Create close_pr.yml

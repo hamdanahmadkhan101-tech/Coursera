@@ -1,0 +1,14 @@
+Command:
+curl -sS -f 'https://api.github.com/repos/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pulls/13885' | python3 -c 'import json,sys; p=json.load(sys.stdin); print(json.dumps({"number":p.get("number"),"state":p.get("state"),"merged":p.get("merged"),"html_url":p.get("html_url"),"head_repository":(p.get("head",{}).get("repo") or {}).get("full_name"),"head_branch":p.get("head",{}).get("ref"),"base_repository":(p.get("base",{}).get("repo") or {}).get("full_name"),"base_branch":p.get("base",{}).get("ref")}, indent=2))'
+
+Terminal output:
+{
+  "number": 13885,
+  "state": "closed",
+  "merged": false,
+  "html_url": "https://github.com/ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub/pull/13885",
+  "head_repository": "hamdanahmadkhan101-tech/mcino-Introduction-to-Git-and-GitHub",
+  "head_branch": "bug-fix-typo",
+  "base_repository": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub",
+  "base_branch": "main"
+}
