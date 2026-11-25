@@ -1,0 +1,9 @@
+Command:
+curl -sS 'https://api.github.com/repos/hamdanahmadkhan101-tech/mcino-Introduction-to-Git-and-GitHub' | python3 -c 'import json,sys; r=json.load(sys.stdin); print(json.dumps({"full_name":r.get("full_name"),"fork":r.get("fork"),"parent":(r.get("parent") or {}).get("full_name")}, indent=2))'
+
+Terminal output:
+{
+  "full_name": "hamdanahmadkhan101-tech/mcino-Introduction-to-Git-and-GitHub",
+  "fork": true,
+  "parent": "ibm-developer-skills-network/mcino-Introduction-to-Git-and-GitHub"
+}
